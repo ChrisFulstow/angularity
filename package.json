@@ -1,0 +1,35 @@
+{
+  "name": "angularity",
+  "version": "1.0.0",
+  "description": "Adventures in Angular 2",
+  "main": "main.ts",
+  "dependencies": {
+    "angular2": "2.0.0-beta.7",
+    "es6-promise": "^3.0.2",
+    "es6-shim": "^0.33.3",
+    "reflect-metadata": "0.1.2",
+    "rxjs": "5.0.0-beta.2",
+    "systemjs": "0.19.22",
+    "zone.js": "0.5.15"
+  },
+  "devDependencies": {
+    "lite-server": "^2.1.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chrisfulstow/angularity.git"
+  },
+  "keywords": [
+    "angular2",
+    "typescript"
+  ],
+  "author": "Chris Fulstow",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/chrisfulstow/angularity/issues"
+  },
+  "homepage": "https://github.com/chrisfulstow/angularity#readme"
+}
