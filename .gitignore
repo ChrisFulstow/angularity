@@ -3,6 +3,7 @@
 
 typings/
 app/**/*.js
+.typingsrc
 
 # User-specific files
 *.suo
