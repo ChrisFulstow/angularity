@@ -3,6 +3,9 @@
 
 typings/
 app/**/*.js
+app/**/*.js.map
+src/**/*.js
+src/**/*.js.map
 .typingsrc
 
 # User-specific files
