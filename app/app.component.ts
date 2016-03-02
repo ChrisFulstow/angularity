@@ -4,6 +4,7 @@ import {Component}          from 'angular2/core';
 import {HeroesComponent}    from './heroes.component';
 import {HeroService}        from './hero.service';
 import {DashboardComponent} from './dashboard.component';
+import { HeroDetailComponent } from './hero-detail.component';
 
 @Component({
     selector: 'my-app',
@@ -18,7 +19,8 @@ import {DashboardComponent} from './dashboard.component';
     providers: [
         HeroService,
         ROUTER_PROVIDERS
-    ]
+    ],
+    styleUrls: ['app/app.component.css']
 })
 @RouteConfig([
     {
@@ -31,7 +33,12 @@ import {DashboardComponent} from './dashboard.component';
         name: 'Dashboard',
         component: DashboardComponent,
         useAsDefault: true
-    }
+    },
+    {
+        path: '/detail/:id',
+        name: 'HeroDetail',
+        component: HeroDetailComponent
+    },
 ])
 export class AppComponent {
     title = 'Tour of Heroes';
