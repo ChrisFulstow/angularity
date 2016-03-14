@@ -1,0 +1,37 @@
+<h1 class="page-header">Finance</h1>
+
+<div class="row">
+    <div class="col-lg-12">
+        <div class="panel panel-default">
+            <div class="panel-heading">Look up a stock price</div>
+            <div class="panel-body">
+
+                <div class="col-lg-6">
+                    <form role="form">
+                        <div class="form-group">
+                            <label>Ticker symbol</label>
+                            <input [(ngModel)]="symbol" class="form-control" placeholder="e.g. MSFT or AAPL">
+                        </div>
+                        <button type="submit" class="btn btn-default" (click)="loadStockPrice(symbol)">Search</button>
+                    </form>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <div class="row">
+                                <div class="col-xs-3">
+                                    <i class="fa fa-dollar fa-5x"></i>
+                                </div>
+                                <div class="col-xs-9 text-right">
+                                    <div class="huge">{{price | number:'1.2-2'}}</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
